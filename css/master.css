@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+}
+
+
+body {
+  background-color: #f8fbfb;
+}
+
+/* hero page */
+
+
+.email-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  margin-right: 1.6rem;
+}
+
+.linkedin-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+
+/* Casestudy */

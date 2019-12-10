@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="20" viewBox="0 0 135 20">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#6B7D7E" font-family="FuturaPT-Demi, Futura PT" font-size="16" font-weight="500" letter-spacing="5">
+            <tspan x="36.228" y="16">COLVILLE</tspan>
+        </text>
+        <path fill="#017F82" d="M20 0c0 7.403-4.022 13.866-10 17.324C4.023 13.867 0 7.403 0 0h20z"/>
+        <path fill="#01BABE" d="M10 17.325l-.185.105a19.9 19.9 0 0 1-9.47 2.567L0 20V0c0 7.403 4.022 13.867 10 17.325zM20 0v20l-.344-.003A19.9 19.9 0 0 1 10 17.325C15.978 13.865 20 7.403 20 0z"/>
+    </g>
+</svg>

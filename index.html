@@ -9,44 +9,46 @@
       <link rel="stylesheet" href="css/reset.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
       <link rel="stylesheet" href="css/master.css">
-      
+      <link href="https://fonts.googleapis.com/css?family=Lustria|Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+      <!-- SCRIPTS -->
+      <script src="https://kit.fontawesome.com/eb97910789.js" crossorigin="anonymous"></script>
+
+
     </head>
     <body>
       <!-- Hero Section -->
-      <section class="hero-section">
-        <header>
-          <a href="index.html"><img src="img/logo.svg" class="Logo" alt="Jon Colville Logo"></a>
-          <nav>
-            <ul>
-              <li><a href="#">Case Studies</a></li>
-              <li><a href="#">Graphic Design</a></li>
-              <li><a href="#">Sandbox</a></li>
-              <li><a href="#">About</a></li>
-            </ul>
-          </nav>
-        </header>
-      <div class="container-full">
-        <p class="overline">Hello, You can call me Jon.</p>
-        <h1>I am a Twin Cities-based UX/UI Visual Designer with over 13 years of experience in art direction and graphic design.</h1>
-        <h1>I love to learn and am continually looking for ways to improve things, learn more and just do it better.</h1>
-        <div class="contact-icons">
-          <a href="mailto:colvilledesigns@gmail.com?subject=Opportunity">
-            <img src="img/email-icon.svg" class="email-icon">
-          </a>
-          <a href="http://www.linkedin.com/in/jon-colville">
-            <img src="img/linked-in-icon.svg" class="linkedin-icon">
-          </a>
+      <header class="hero-section">
+        <nav>
+          <ul class="menu">
+            <li class="logo"><a href="index.html"><img src="img/logo-main.png" alt="Jon Colville Logo"></a></li>
+            <li class="item"><a href="index.html" class="active">Case Studies</a></li>
+            <li class="item"><a href="#">Graphic Design</a></li>
+            <li class="item"><a href="#">Sandbox</a></li>
+            <li class="item"><a href="#">About</a></li>
+            <li class="toggle"><a href="#"><img src="img/mobile-menu.svg" alt="Hamburger menu"></a></li>
+          </ul>
+        </nav>
+        <div class="container-full hero-text">
+          <div>
+            <h6 class="intro">Hello, You can call me Jon.</h6>
+            <h1>I am a Twin Cities-based UX/UI Visual Designer with over 13 years of experience in art direction and graphic design.</h1>
+            <h1 class="mobile-hidden">I love to learn and am continually looking for ways to improve things, learn more and just do it better.</h1>
+            <div class="contact-icons">
+              <a class="contact-icon" href="mailto:colvilledesigns@gmail.com?subject=Opportunity"><i class="fas fa-envelope fa-2x"></i></a>
+              <a class="contact-icon" href="http://www.linkedin.com/in/jon-colville"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
-      </section>
+    </header>
 
       <!-- Casestudy Section -->
-      <section class="casestudy">
+      <section class="container-full project">
         <div class="casestudy-text">
-          <p class="overline">01</p>
+          <h6>01</h6>
           <h2>Focal Cloud Storage</h2>
-          <p class="large-paragraph">Focal is a cloud storage application that allows for a single point of entry for multiple third-party cloud storage services.</p>
-          <button><a href="project.html" class="button">View Casestudy</a></button>
+          <p class="paragraph-large">Focal is a cloud storage application that allows for a single point of entry for multiple third-party cloud storage services.</p>
+          <button class="view-casestudy-btn"><a href="project.html" class="button">View Casestudy</a></button>
         </div>
         <div class="casestudy-image">
           <img src="img/focal-phone.png" srcset="img/focal-phone@2x.png 2x, img/focal-phone@3x.png 3x" class="focal-phone" alt="Focal Cloud Storage phone mockup">
@@ -55,23 +57,29 @@
 
       <!-- Footer Section -->
       <footer>
-        <div class="footer-content">
-          <h2>Say Hello!</h2>
-          <p class="paragraph-large">I love meeting new people. Feel free to get in touch.</p>
-          <div class="contact-icons">
-            <a href="mailto:colvilledesigns@gmail.com?subject=Opportunity">
-              <img src="img/email-icon.svg" class="email-icon">
-            </a>
-            <a href="http://www.linkedin.com/in/jon-colville">
-              <img src="img/linked-in-icon.svg" class="linkedin-icon">
-            </a>
+        <div class="container-full">
+          <div class="footer-content">
+            <h2>Say hello!</h2>
+            <p class="paragraph-large">I love meeting new people.  <br>Feel free to get in touch.</p>
+            <div class="contact-icons">
+              <a href="mailto:colvilledesigns@gmail.com?subject=Hello!">
+                <i class="fas fa-envelope fa-2x"></i>
+              </a>
+              <a href="http://www.linkedin.com/in/jon-colville">
+                <i class="fab fa-linkedin-in fa-2x"></i>
+              </a>
+            </div>
+          </div>
+          <div class="copyright">
+            <p class="copyright-text">© 2019. All rights reserved. </p>
+            <p class="copyright-text"> Built with <i class="fas fa-heart fa-1x"></i> by Jonathan Colville.</p>
           </div>
         </div>
-        <div class="copyright">
-          <p class="copyright-text">© 2019. All rights reserved. </p>
-          <p class="copyright-text"> Built with care by Jonathan Colville.</p>
-        </div>
       </footer>
+
+      <!-- JAVASCRIPT -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="js/navigation.js"></script>
 
     </body>
   </html>

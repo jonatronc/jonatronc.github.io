@@ -161,7 +161,7 @@ blockquote {
   font-size: 2.4rem;
   line-height: 3.6rem;
   letter-spacing: normal;
-  margin-bottom: 9.6rem;
+  text-align: center;
 }
 
 
@@ -277,6 +277,11 @@ a.light:hover{
   margin: auto;
 }
 
+.casestudy-text h6 {
+  color: #F7A17E;
+  margin-bottom: 1.2rem;
+}
+
 .view-casestudy-btn {
   background-color: #017F82;
   border: 0rem;
@@ -359,7 +364,6 @@ footer {
       font-size: 3.6rem;
       line-height: 5.4rem;
       letter-spacing: normal;
-      margin-bottom: 9.6rem;
     }
 
 
@@ -419,5 +423,497 @@ footer {
   .casestudy-image {
     align-self: center;
   }
+
+}
+
+
+
+
+/* --------------------------------------------------------------- Case Study CSS --------------------------------------------------------------- */
+
+
+
+
+.casestudy-body {
+  background-color: #fff;
+}
+
+/* --------------------- PAGE STYLES --------------------- */
+
+
+.hero-section {
+  background-image: url("/Users/j_colville/GRAPHIC-DESIGN-RELATED/BLOC/Module15-Portfolio/portfolio/img/focal/hero-shapes.png"), linear-gradient(119deg, #3152a7, #4064c0);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.color-bg {
+  background-color: #F2F5F5;
+}
+
+.focal-std-btn {
+  background-color: #3658AF;
+  border: 0rem;
+  border-radius: .4rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  height: 4.8rem;
+  margin-top: 3.2rem;
+  margin-bottom: 9.6rem;
+  padding: 1.2rem 3.2rem 1.6rem 3.2rem;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.focal-std-btn:hover {
+  opacity: 0.8;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.h4-focal {
+  color: #6587E0;
+}
+
+
+blockquote {
+  padding-top: 9.6rem;
+  color: #284CAC;
+}
+
+
+/* --------------------- HEADER --------------------- */
+
+/* structure */
+
+
+.hero-content {
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  padding: 9.6rem 2.8rem 0rem 2.8rem;
+}
+
+/* Text Content */
+.main-content{
+  text-align: center;
+}
+
+.main-content h1, .main-content p{
+  color: #FFF;
+}
+
+/* button */
+button.mobile-proto-btn {
+  background-color: #FDC35D;
+  border: 0rem;
+  border-radius: .4rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  height: 4.8rem;
+  padding: 1.2rem 3.2rem 1.6rem 3.2rem;
+  transition: 0.3s;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 4.8rem;
+}
+
+button.mobile-proto-btn a {
+  color: #284CAC;
+}
+
+button.mobile-proto-btn:hover {
+  background-color: #FDD892;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+
+/* Details */
+
+.details-bg {
+  background-color: rgba(7,0,0,0.25);
+}
+
+
+
+.details-column ul{
+  margin-bottom: 4.8rem;
+}
+
+.details-column ul li{
+  color: #FFF;
+  line-height: 2.4rem;
+  font-size: 1.2rem;
+  margin-bottom: 0rem;
+}
+
+.details-column ul li.list-heading {
+  color: #FFF;
+  font-family: 'Lustria', serif;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  line-height: 3.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-around;
+  padding: 4.8rem 0rem;
+  text-align: center;
+
+}
+
+.middle{
+  padding: 0 15%;
+  border-right: 4px solid rgba(255, 255, 255, 0.05);
+  border-left: 4px solid rgba(255, 255, 255, 0.05);
+}
+
+/* image */
+.hero-image {
+  align-self: flex-end;
+}
+
+.hero-image img{
+  display: block;
+  margin: auto;
+  position: relative;
+  right: 10%;
+}
+/* --------------------- MAIN STYLES --------------------- */
+
+section {
+  padding-top: 9.6rem;
+}
+
+h6 {
+  margin-bottom: 4.8rem;
+  color: #325ED5;
+}
+
+/* --------------------- DISCOVERY --------------------- */
+
+.solution {
+  padding-bottom: 9.6rem;
+}
+
+/* User Research */
+.survey-data {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 6.4rem;
+}
+
+.stat {
+  padding-bottom: 2.4rem;
+  padding-top: 2.4rem;
+}
+
+.stat-number {
+  color: #325ED5;
+  font-size: 4.8rem;
+  text-align: center;
+  padding-bottom: 1.0rem;
+}
+
+.stat-caption {
+  color: #325ED5;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+
+
+/* Pain Points */
+.pain-points {
+  padding-top: 9.6rem;
+  padding-bottom: 9.6rem;
+  text-align: center;
+}
+
+blockquote {
+  padding-bottom: 9.6rem;
+  padding-top: 9.6rem;
+}
+
+/*Competative Analysis */
+
+.competative-analysis img {
+  width: 100%;
+  max-width: 36rem;
+  margin: auto;
+  display: block;
+  padding-bottom: 6.4rem;
+  padding-top: 4.8rem;
+}
+
+/* User Personas */
+.user-persona {
+  padding-top: 9.6rem;
+}
+
+.persona-quote{
+  margin-bottom: 6.4rem;
+}
+
+.persona-quote img {
+  display: block;
+  margin-bottom: 2.4rem;
+}
+
+/* Project Goals */
+
+.project-goals {
+  text-align: center;
+  padding-bottom: 9.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------------- INFO ARCHITECTURE --------------------- */
+
+/* User Stories */
+
+.info-arch-intro {
+  margin-bottom: 9.6rem;
+}
+
+.user-stories {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 19.2rem;
+}
+
+.high-priority, .medium-priority, .low-priority {
+  padding: 4.8rem;
+  border-top: .4rem solid;
+  border-radius: .4rem;
+  background-color: #FFF;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.high-priority {
+  border-color: #17a035;
+}
+
+
+.medium-priority {
+  border-color: #fdc35d;
+  margin: 4.8rem 0rem;
+}
+
+.low-priority {
+  border-color: #a01717;
+}
+
+/* --------------------- PROTOTYPES --------------------- */
+.proto-intro {
+  padding-bottom: 9.6rem;
+}
+
+.high-fidelity {
+  padding-top: 9.6rem;
+}
+
+.focal-std-btn.stacked-btn {
+margin-bottom: 0rem;
+}
+
+.phone-img {
+  align-self: baseline;
+  padding-bottom: 9.6rem;
+}
+
+.phone-img img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone-img p{
+  text-align: center;
+  padding: 0 2.8rem;
+}
+
+/* --------------------- FINAL THOUGHTS --------------------- */
+.final-thoughts {
+  padding-bottom: 6.4rem;
+
+}
+
+
+
+/* --------------------- MEDIA QUERIES - TABLET - 767px --------------------- */
+@media all and (min-width: 767px) {
+
+  .focal-std-btn {
+    display: block;
+    width: auto;
+    min-width: 21rem;
+    margin-left: auto;
+    margin-right: auto;\
+    text-align: center;
+  }
+
+
+
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem;
+  }
+
+  .main-content {
+    text-align: left;
+  }
+
+  button.mobile-proto-btn {
+    width:auto;
+  }
+
+  .project-details {
+    flex-direction: row;
+  }
+
+  .details-column {
+    margin-right: auto;
+    padding-top: 4.8rem;
+  }
+
+  .hero-image{
+    align-self: center;
+    min-width: 34.6rem;
+  }
+
+  /* --------------------- SNAPSHOT --------------------- */
+
+  .columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .problem {
+    width: 57rem;
+    padding-right: 2rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .snapshot div {
+    margin-bottom: 9.6rem;
+  }
+
+  /* User Research */
+  .survey-insights {
+    flex-direction: column;
+  }
+
+  /* User Personas */
+
+  .user-persona-intro {
+    padding-bottom: 4.8rem;
+  }
+
+  .persona-quote {
+    margin:auto;
+    padding-bottom: 9.6rem;
+    text-align: center;
+    width:80%;
+  }
+
+  .persona-quote img {
+    margin: auto;
+    margin-bottom: 2.4rem;
+  }
+
+  /* Project Goals */
+  .project-goals {
+    flex-direction: row;
+  }
+
+  .project-goals div {
+    flex-direction: row;
+    padding: 0 2.4rem;
+  }
+
+  /* User Stories */
+  .user-stories {
+    flex-direction: row;
+  }
+  .high-priority, .medium-priority, .low-priority {
+    width: 33.33%;
+  }
+
+  .medium-priority {
+    margin: 0 4.8rem;
+  }
+
+  /* --------------------- PROTOTYPING --------------------- */
+
+/* high-fidelity */
+  .phone-img {
+    width: 33%;
+  }
+
+  .phone-img img{
+    width: 100%;
+  }
+
+}
+
+
+/* --------------------------------------------------------------- ABOUT PAGE --------------------------------------------------------------- */
+
+hr {
+  border-top: 1px solid rgba(107,125,126,0.2);
+  margin-bottom: 4.8rem;
+
+}
+
+.about-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.background {
+  width: auto;
+  max-width: 60%;
+  margin-right: 9.6rem;
+}
+
+.skills {
+  padding-left: 3rem;
+  width: 25%;
+}
+
+.entry {
+  padding: 2.4rem 0 4.8rem 0;
+}
+
+@media all and (max-width: 767px) {
+
+  .about-main {
+    flex-direction: column;
+  }
+
+  .background {
+    width: auto;
+    max-width: 100%;
+    margin-right: 0rem;
+  }
+
+  .skills {
+    padding-left: 0rem;
+    width: 100%;
+  }
+
+  .entry {
+    padding: 1.2rem 0 2.4rem 0;
+  }
+
 
 }

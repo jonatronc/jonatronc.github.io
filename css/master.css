@@ -113,7 +113,7 @@ p.paragraph-large {
   margin-bottom: 3.2rem;
 }
 
-p.paragraph-medium, button {
+p.paragraph-medium, .button {
   font-size: 1.4rem;
   letter-spacing: 0;
   line-height: 2.4rem;
@@ -292,15 +292,16 @@ a.light:hover{
   padding: 1.2rem 3.2rem 1.6rem 3.2rem;
   transition: 0.3s;
   width: auto;
-
 }
+
 
 .view-casestudy-btn:hover {
   background-color: #01BABE;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  color: #FFF;
 }
 
-.view-casestudy-btn a, .mobile-proto-btn a, .focal-std-btn a{
+.button, .view-casestudy-btn a, .mobile-proto-btn a, .focal-std-btn a{
   color: #FFF;
   font-weight: 600;
   line-height: 0rem;
@@ -458,15 +459,18 @@ footer {
   border: 0rem;
   border-radius: .4rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  display: block;
   height: 4.8rem;
   margin-top: 3.2rem;
-  margin-bottom: 9.6rem;
-  padding: 1.2rem 3.2rem 1.6rem 3.2rem;
+  margin-bottom: 4.8rem;
+  padding: 2.4rem 3.2rem 1.6rem 3.2rem;
+  text-align: center;
   transition: 0.3s;
   width: 100%;
 }
 
 .focal-std-btn:hover {
+  color: #FFF;
   opacity: 0.8;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -504,7 +508,7 @@ blockquote {
 }
 
 /* button */
-button.mobile-proto-btn {
+a.mobile-proto-btn {
   background-color: #FDC35D;
   border: 0rem;
   border-radius: .4rem;
@@ -517,11 +521,11 @@ button.mobile-proto-btn {
   margin-bottom: 4.8rem;
 }
 
-button.mobile-proto-btn a {
+a.mobile-proto-btn {
   color: #284CAC;
 }
 
-button.mobile-proto-btn:hover {
+.button.mobile-proto-btn:hover {
   background-color: #FDD892;
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
@@ -717,8 +721,8 @@ blockquote {
   padding-top: 9.6rem;
 }
 
-.focal-std-btn.stacked-btn {
-margin-bottom: 0rem;
+.focal-std-btn .stacked-btn {
+  margin-bottom: 0rem;
 }
 
 .phone-img {
@@ -748,12 +752,12 @@ margin-bottom: 0rem;
 /* --------------------- MEDIA QUERIES - TABLET - 767px --------------------- */
 @media all and (min-width: 767px) {
 
-  .focal-std-btn {
+  a.focal-std-btn {
     display: block;
-    width: auto;
+    width: 100%;
     min-width: 21rem;
     margin-left: auto;
-    margin-right: auto;\
+    margin-right: auto;
     text-align: center;
   }
 
@@ -771,7 +775,7 @@ margin-bottom: 0rem;
     text-align: left;
   }
 
-  button.mobile-proto-btn {
+  .button.mobile-proto-btn {
     width:auto;
   }
 

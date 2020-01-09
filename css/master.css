@@ -262,7 +262,6 @@ a.light:hover{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 
@@ -579,6 +578,7 @@ a.mobile-proto-btn {
 /* image */
 .hero-image {
   align-self: flex-end;
+  padding-top: 4.8rem;
 }
 
 .hero-image img{
@@ -872,6 +872,10 @@ blockquote {
 
 
 /* --------------------------------------------------------------- ABOUT PAGE --------------------------------------------------------------- */
+
+.headshot-img {
+  padding-top: 4.8rem;
+}
 
 hr {
   border-top: 1px solid rgba(107,125,126,0.2);

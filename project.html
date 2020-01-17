@@ -30,15 +30,16 @@
         <nav>
           <ul class="menu">
             <li class="logo"><a href="index.html"><img src="img/logo-reversed.png" alt="Jon Colville Logo"></a></li>
-            <li class="item"><a href="index.html" class="active light">Case Studies</a></li>
+            <li class="item"><a href="index.html" class="active light selected-light">Case Studies</a></li>
             <li class="item"><a href="about.html" class="light">About</a></li>
-            <li class="toggle"><a href="#" class="light"><img src="img/mobile-menu-light.svg" alt="Hamburger menu"></a></li>
+            <li class="item"><a class="cv-light light" href="cv/jonathan-colville-resume.pdf" target="_blank" download>Download Resum&eacute;</a></li>
+            <li class="toggle"><a href="#"><img src="img/mobile-menu.svg" alt="Hamburger menu"></a></li>
           </ul>
         </nav>
         <div class="hero-content container-full columns">
 
             <!-- Hero Text -->
-          <div class="hero-text">
+          <div class="hero-text cs-hero">
             <div class="main-content">
               <h1>Focal Cloud Storage</h1>
               <p class="paragraph-large white-text">Focal is a cloud storage application that allows for a single point of entry for multiple third-party cloud storage services.</p>
@@ -50,7 +51,9 @@
           <div class="hero-image">
             <img src="img/focal/focal-hero-phone.png" alt="Focal phone mockup">
           </div>
+
         </div>
+
 
         <div class="full-width details-bg">
           <div class="container-full project-details">
@@ -77,7 +80,7 @@
                 <li class="list-heading">Deliverables</li>
                 <li>Brand Identity</li>
                 <li>Clickable Prototypes</li>
-                <li>Competative Analysis</li>
+                <li>Competitive Analysis</li>
                 <li>Hi-Fi Wireframes</li>
                 <li>Lo-Fi Wireframes</li>
                 <li>Preference Testing</li>
@@ -96,9 +99,9 @@
       <main>
 
         <!-- SNAPSHOT SECTION -->
-        <section class="snapshot">
+        <section id="overview" class="snapshot">
           <div class="container-small">
-            <h6>Overview</h6>
+            <h2 class="project-header">Overview</h2>
             <p class="paragraph-large">Cloud storage has become an integral and ubiquitous part of people's lives and is used in a variety of contexts. From work to home and back again, people are using cloud storage to organize their digital lives and simplify collaboration between one another.</p>
             <p class="paragraph-medium">However, what happens when cloud storage becomes less of a solution and more of another thing to manage? How to do we simplify managing multiple, disparate storage drives?</p>
             <p class="paragraph-medium">This is where Focal Cloud storage comes in. Focal is a web application that allows users to manage multiple cloud storage accounts from a single origin point, allowing people to focus on their work and not their files.</p>
@@ -109,15 +112,15 @@
         <!-- DISCOVERY SECTION -->
         <section class="discovery">
           <div class="container-small">
-            <h6>Discovery</h6>
+            <h2 class="project-header">Discovery</h2>
             <p class="paragraph-large">This project began as an open-ended request to identify an area of opportunity within the cloud storage market and develop a product that would serve that opportunity. To begin, I needed to understand two things, the cloud storage marketplace and how people incorporate cloud solutions into their lives.</p>
 
             <!-- User Research -->
-            <h2>User Research</h2>
+            <h3>User Research</h3>
             <p class="paragraph-medium">Conducting the user survey was crucial in generating and uncovering issues that users are having. This part of the process also helped me to better understand how users are implementing cloud storage as a production tool.</p>
             <p class="paragraph-medium">One of the most interesting things that I discovered was that the majority (84 percent) of the respondents use at least two cloud storage services. This introduced further questions about how they manage using multiple accounts or services.</p>
 
-            <div class="survey-data">
+            <div class="survey-data col-3-grid-container">
                 <div class="stat">
                   <p class="stat-number">84%</p>
                   <p class="stat-caption">use more than one solution</p>
@@ -134,53 +137,91 @@
           </div>
 
           <!-- Pain points -->
-          <div class="full-width color-bg pain-points">
-            <h3>User Pain Points</h3>
+          <div class="full-width color-bg text-center">
+            <div class="container-small">
+            <h2 class="project-header">User Pain Points</h2>
             <p class="paragraph-medium">Logging in from different devices</p>
             <p class="paragraph-medium">Remembering passwords</p>
             <p class="paragraph-medium">Locating files across services</p>
             <p class="paragraph-medium">Figuring out how to use the storage service</p>
-          </div>
-          <div class="container-full">
             <blockquote>Users were having issues with organization and management between multiple cloud storage applications. Moving forward, I wanted to be mindful to not offer just another cloud storage service, introducing further complexity. But, one that could simplify the way users manage their existing solutions.</blockquote>
           </div>
+          </div>
 
-          <!-- Competative Analysis -->
-          <div class="competative-analysis container-small">
-            <h2>Competative Analysis</h2>
+          <!-- Competitive Analysis -->
+          <div class="competitive-analysis container-small">
+            <h3>Competitive Analysis</h3>
             <p class="paragraph-medium">To better understand the current cloud storage market, I researched the most used applications indicated by survey respondents. Those services included Google Drive, Dropbox, and Evernote.</p>
             <p class="paragraph-medium">This provided insight into the functionality and features that people were already familiar with. In order to minimize the learning curve and increase adoption rates, many similar UI and user flows were adopted from these services.</p>
-            <img src="img/focal/focal-competitors.png" srcset="img/focal/focal-competitors@2x.png 2x,img/focal/focal-competitors@3x.png 3x" alt="Google Drive, DropBox, Evernote logos">
           </div>
+          <div class="container-full">
+          <img src="img/focal/competitive-analysis.jpg" alt="Use similar UI elements as competitors">
+        </div>
 
           <!-- User Personas -->
           <div class="user-persona container-small">
-              <div class="user-persona-intro">
-                <h2>User Peronas</h2>
-                <p class="paragraph-medium">I developed two user personas that fit within the demographics discovered during the user survey. I referenced these throughout the design process to ensure sure that the product is addressing their frustrations and goals and to remind myself to keep their motivations in mind.</p>
-              </div>
-              <div class="persona-quote">
-                <img src="img/focal/focal-persona.png" srcset="img/focal/focal-persona@2x.png 2x,img/focal/focal-persona@3x.png 3x" alt="Image of User">
-                <p class="paragraph-medium">“I often forget my logins to get into my different accounts. I also have a hard time remembering what service I've used to save things on, especially if I haven't used it in a while."</p>
-                <p class="paragraph-medium-bold"><b>Mike</b></p>
-                <p class="paragraph-small">Marketer | Chicago, IL </p>
-              </div>
+            <div class="user-persona-intro">
+              <h3>User Personas</h3>
+              <p class="paragraph-medium">I developed two user personas that fit within the demographics discovered during the user survey. I referenced these throughout the design process to ensure sure that the product is addressing their frustrations and goals and to remind myself to keep their motivations in mind.</p>
+            </div>
+          </div>
+          <div class="container-full">
+            <div class="col-2-grid-container">
+              <div class="persona-card">
+                  <img src="img/focal/focal-persona.png" alt="Image of User Persona 1">
+                  <h4>Mike</h4>
+                  <p class="paragraph-small">Marketer | Chicago, IL </p>
+                  <hr class="persona-hr">
+                  <p class="paragraph-medium-bold">Goals</p>
+                  <ul>
+                    <li class="paragraph-small">To have a secure system that he can back up his important files too</li>
+                    <li class="paragraph-small">To be able to share and collaborate on documents with other people</li>
+                    <li class="paragraph-small">Wants to be able to access files from any device or platform</li>
+                  </ul>
+                  <p class="paragraph-medium-bold">Frustrations</p>
+                  <ul>
+                    <li class="paragraph-small">Not everyone is on the same cloud platform. Some friends use Dropbox and others use Google Drive</li>
+                    <li class="paragraph-small">Uses several different cloud storage apps and often forgets his login/username/password for them</li>
+                    <li class="paragraph-small">Sometimes has a hard time keeping track of files location</li>
+                  </ul>
+                </div>
+              <div class="persona-card">
+                  <img src="img/focal/sara.png" alt="Image of User Persona 2">
+                  <h4>Sara</h4>
+                  <p class="paragraph-small">Teacher | Westminster, CO </p>
+                  <hr class="persona-hr">
+                  <p class="paragraph-medium-bold">Goals</p>
+                  <ul>
+                    <li class="paragraph-small">Make teaching notes and documents at home and then be able to access them at her school</li>
+                    <li class="paragraph-small">Would love a way to easily organize her Google Drive account with her schools cloud storage solution</li>
+                    <li class="paragraph-small">Have an easy way to organize and categorize her files based on classes and and individual students</li>
+                  </ul>
+                  <p class="paragraph-medium-bold">Frustrations</p>
+                  <ul>
+                    <li class="paragraph-small">She has to navigate between her school's cloud storage application and Google Drive</li>
+                    <li class="paragraph-small">Organization is a problem, since she has many classes and students</li>
+                    <li class="paragraph-small">She would like an easy way to find her files quickly</li>
+                  </ul>
+                </div>
+            </div>
           </div>
           <!-- Project Goals -->
           <div class="full-width color-bg">
-            <div class="container-full">
-              <blockquote>Project Goals</blockquote>
-            </div>
-            <div class="project-goals container-small">
+              <h2 class="project-header text-center">Project Goals</h2>
+            <div class="container-small project-goals col-2-grid-container">
               <div>
                 <h4 class="h4-focal">01</h4>
                 <p class="paragraph-medium"><b>Product should unify and simplify the workflow between disparate cloud storage services.</b></p>
+              </div>
+              <div>
                 <h4 class="h4-focal">02</h4>
                 <p class="paragraph-medium"><b>Linking accounts should be simple and easy.</b></p>
               </div>
-              <div class="">
+              <div>
                 <h4 class="h4-focal">03</h4>
                 <p class="paragraph-medium"><b>The service should work on both mobile and desktop.</b></p>
+              </div>
+              <div>
                 <h4 class="h4-focal">04</h4>
                 <p class="paragraph-medium"><b>Develop basic functionality, focusing on critical features for the MVP.</b></p>
               </div>
@@ -191,16 +232,17 @@
         <!-- INFORMATION ARCHITECTURE -->
         <section class="information-arch">
           <div class="info-arch-intro container-small">
-            <h6>Information Architecture</h6>
+            <h2 class="project-header">Information Architecture</h2>
             <p class="paragraph-large">After outlining the goals of the product, I developed several user stories that would later inform the design of the product. After prioritizing those user stories, I developed user flows that would allow for the user to successfully complete those stories.</p>
 
             <!-- User Stories -->
-            <h2>User Stories</h2>
+            <h3>User Stories</h3>
             <p class="paragraph-medium">User stories were created to identify key features needed in the application to successfully achieve the project goals. In order to achieve an initial MVP and to keep the project scope to a manageable size, I focused on the high priority stories.</p>
             <p class="paragraph-medium">The lower priority stories identified would be included in future iterations of the product post-launch.</p>
           </div>
           <div class="user-stories container-full">
             <div class="high-priority">
+              <p class="paragraph-medium-bold">High priority</p>
               <p class="paragraph-medium">I want to be able to register for an account.</p>
               <p class="paragraph-medium">I want to be able to a sign-in to my account.</p>
               <p class="paragraph-medium">I want to be able to link to my existing external cloud storage applications. </p>
@@ -209,6 +251,7 @@
               <p class="paragraph-medium">I want to be able to share and transfer files and folders to others. </p>
             </div>
             <div class="medium-priority">
+              <p class="paragraph-medium-bold">Medium priority</p>
               <p class="paragraph-medium">I want to be able to collaborate on documents with others.</p>
               <p class="paragraph-medium">I want to be able to access my files from any device. </p>
               <p class="paragraph-medium">I want to be able to delete files.</p>
@@ -217,6 +260,7 @@
               <p class="paragraph-medium">I want to be able to edit a document.</p>
             </div>
             <div class="low-priority">
+              <p class="paragraph-medium-bold">Low priority</p>
               <p class="paragraph-medium">I want an onboarding tutorial.</p>
               <p class="paragraph-medium">I want to be able to delete my account. </p>
               <p class="paragraph-medium">I want to be able to increase my storage capicity. </p>
@@ -227,83 +271,103 @@
 
             <!-- User Flows -->
           <div class="container-small">
-            <h2>User Flows</h2>
+            <h3>User Flows</h3>
             <p class="paragraph-medium">After identifying the high priority user stories, I began to map out how the user would complete the identified tasks. From my initial user flow sketches, I refined them further using Whimsical</p>
-            <a class="focal-std-btn button" target="_blank" href="https://whimsical.com/X9ArHTjMkM5r6b6oDCSiLQ">User Flows</a>
           </div>
-          <picture>
-            <source media = "(max-width: 768px)" srcset="img/focal/mobile/userflow-m-@2x.png">
-            <img src="img/focal/user-flows.png" alt="Image of user flows">
-          </picture>
+          <div class="full-width color-bg">
+            <picture>
+              <source media = "(max-width: 768px)" srcset="img/focal/mobile/userflow-m-@2x.png">
+              <img src="img/focal/user-flows.png" alt="Image of user flows">
+            </picture>
+            <div class="container-small">
+              <a class="focal-std-btn button" target="_blank" href="https://whimsical.com/X9ArHTjMkM5r6b6oDCSiLQ">View User Flows</a>
+            </div>
+          </div>
         </section>
 
         <!-- BRAND DEVELOPMENT-->
         <section class="Brand">
           <div class="container-small">
-            <h6>Brand Development</h6>
+            <h2 class="project-header">Brand Development</h2>
             <p class="paragraph-large">The branding process starts during the discovery phase. Before developing a brand it is important to understanding our competitors and how they present themselves. What areas of opportunities exist? How can our service differentiate from them?  In addition, it is also imperative to understand the user group and what they value and what their motivations are. From there, we can start to develop a meaningful brand personality and product that serves those users.</p>
 
             <!-- Brand Identity -->
-            <h2>Brand Personality</h2>
+            <h3>Brand Personality</h3>
             <p class="paragraph-medium">Focal Cloud Storage fits into all aspects of people's lives. It is simple, accessible and simplifies the experience of working between multiple cloud storage services meeting people where they are and how they work.</p>
             <p class="paragraph-medium">Focal is for people. The personality of the brand is easy, friendly, smart and trustworthy and uses a conversational tone in order to speak not to organizations, but to individuals.</p>
-            <a class="focal-std-btn button" target="_blank" href="https://drive.google.com/open?id=1wraOGJhAcOgp0edQLvW409hTE0MsxR9W">View Styleguide</a>
           </div>
-          <picture>
-              <source media = "(max-width: 768px)" srcset="img/focal/mobile/brand-identity@2x.png">
-              <img src="img/focal/focal-branding.jpg" alt="Image of branding moodboard">
-          </picture>
+          <div class="full-width color-bg">
+            <picture>
+                <source media = "(max-width: 768px)" srcset="img/focal/mobile/brand-identity@2x.png">
+                <img src="img/focal/focal-branding.jpg" alt="Image of branding moodboard">
+            </picture>
+            <div class="container-small">
+              <a class="focal-std-btn button" target="_blank" href="https://drive.google.com/open?id=1wraOGJhAcOgp0edQLvW409hTE0MsxR9W">View Styleguide</a>
+            </div>
+          </div>
         </section>
 
         <!-- PROTOTYPES-->
         <section class="prototypes">
           <div class="proto-intro container-small">
-            <h6>Prototyping</h6>
+            <h2 class="project-header">Prototyping</h2>
             <p class="paragraph-large">Using the created user flow diagrams, I began creating wireframes. Beginning with paper sketches and medium-fidelity wireframes, I was able to focus on the user experience and making sure that the flows and architecture of the application made sense. Early usability tests identified some issues with the UX.</p>
 
             <!-- Low-Fidelity -->
-            <h2>Usability Testing</h2>
+            <h3>Usability Testing</h3>
             <p class="paragraph-medium">I conducted a few in-person and online usability tests and asked users to complete specific user stories and noted any issues or comments they had. During this time, I also performed informal user interviews on how they use cloud storage.</p>
             <p class="paragraph-medium">I then adjusted the wireframes based on feedback before moving on to applying the branding and developing the UI elements. Furtherer usability tests were conducted to ensure that there were no issues introduced into the design of the application.</p>
 
-            <h3>Treat Focal as another drive</h3>
-            <p class="paragraph-medium">I initially had the files that were saved to specifically to Focal listed out in the main dashboard for faster access. However, all three testers commented on making less of a distinction between the external storage drives and the files saved specifically to Focal. As one tester put it, “All storage is equal to me.” As a result, I simplified the initial dashboard screen by removing the file list and created a Focal tile within the My Drives section of the dashboard so accessing files saved to Focal would be the same as it would be for accessing linked drive files.</p>
-            <h3>Creating a document contextually</h3>
-            <p class="paragraph-medium">Creating a document is generally simple when using a specific service. However, since Focal allows access to multiple services, there was some confusion about which kind of document would be created. For example, users may want to create a Google Doc or a Dropbox Paper document. How can I create a Google Sheets document? Can I do that when I'm in Dropbox?</p>
-              <p class="paragraph-medium">To resolve this, the user would be presented available drive-specific document types when they are working within that drive. So, when they working within their Google drive only Google-specific document options would appear.</p>
+
+
           </div>
-          <picture>
-            <source media = "(max-width: 768px)" srcset="img/focal/mobile/low-fi-wireframe@2x.png">
-            <img src="img/focal/low-fi-wireframes.jpg" alt="image of wireframes">
-          </picture>
+
+          <div class="container-full wireframe-img">
+            <img src="img/focal/dashboard-wireframe.jpg" />
+            <div class="low-fi-caption">
+              <h4>Treat Focal as another drive</h4>
+              <p class="paragraph-medium">I initially had the files that were saved to specifically to Focal listed out in the main dashboard for faster access. However, all three testers commented on making less of a distinction between the external storage drives and the files saved specifically to Focal. As one tester put it, “All storage is equal to me.” As a result, I simplified the initial dashboard screen by removing the file list and created a Focal tile within the My Drives section of the dashboard so accessing files saved to Focal would be the same as it would be for accessing linked drive files.</p>
+            </div>
+          </div>
+
+          <div class="container-full wireframe-img">
+            <img src="img/focal/contextual-wireframe.jpg" />
+            <div class="low-fi-caption">
+              <h4>Creating a document contextually</h4>
+              <p class="paragraph-medium">Creating a document is generally simple when using a specific service. However, since Focal allows access to multiple services, there was some confusion about which kind of document would be created. For example, users may want to create a Google Doc or a Dropbox Paper document. How can I create a Google Sheets document? Can I do that when I'm in Dropbox?</p>
+              <p class="paragraph-medium">To resolve this, the user would be presented available drive-specific document types when they are working within that drive. So, when they working within their Google drive only Google-specific document options would appear.</p>
+            </div>
+          </div>
 
 
 
           <!-- High-Fidelity -->
           <div class="high-fidelity container-small">
-            <h2>High-Fidelity</h2>
+            <h3 class="project-header">High-Fidelity</h3>
             <p class="paragraph-medium">During the second usability test, users were asking for a way to quickly perform certain tasks they do often, Those tasks included uploading, creating a document, and creating a folder. The initial interface on the mobile version already included bottom navigation and adding these tasks links increased the complexity and cognitive load of the screen. After rethinking this screen, the navigation was relocated to the navigational drawer which reduced the amount of choices users were presented so they could focus on the specific tasks they want to accomplish.</p>
-            <a class="focal-std-btn stacked-btn button" target="_blank" href="https://invis.io/FZUBX01DA9U#/387915092_DESKTOP_-_Landing_Page_-_1_Copy">Desktop Prototype</a>
-            <a class="focal-std-btn stacked-btn button" target="_blank" href="https://projects.invisionapp.com/share/UBUKOA13V2N#/screens/390636077_MOBILE_-_LANDING_PAGE">Mobile Prototype</a>
           </div>
           <div class="container-full">
             <div class="columns">
               <div class="phone-img">
-                <img src="img/focal/hifi-iteration-1.png" alt="High-Fidelity Prototype Iteration 1">
+                <img src="img/focal/hifi-iteration-1@3x.png" alt="High-Fidelity Prototype Iteration 1">
                 <p class="paragraph-medium-bold">Initial prototype with bottom navigation.</p>
                 <p class="paragraph-medium">Users were asking for a quick way to perform certain tasks they frequently perform.</p>
               </div>
               <div class="phone-img">
-                <img src="img/focal/hifi-iteration-2.png" alt="High-Fidelity Prototype Iteration 2">
+                <img src="img/focal/hifi-iteration-2@3x.png" alt="High-Fidelity Prototype Iteration 2">
                 <p class="paragraph-medium-bold">Second iteration</p>
                 <p class="paragraph-medium">I introduced a drop down task menu. However, this increased the complexity of the interface.</p>
               </div>
               <div class="phone-img">
-                <img src="img/focal/hifi-iteration-3.png" alt="High-Fidelity Prototype Iteration 3">
+                <img src="img/focal/hifi-iteration-3@3x.png" alt="High-Fidelity Prototype Iteration 3">
                 <p class="paragraph-medium-bold">Simplified Iteration</p>
                 <p class="paragraph-medium">Keeping in mind Hick's Law﻿ and additional feedback, I simplified the screen by removing the bottom navigation so users can focus on key tasks.</p>
               </div>
             </div>
+          </div>
+          <div class=" container-small button-flex">
+            <a class="focal-std-btn button stacked-btn" target="_blank" href="https://invis.io/FZUBX01DA9U#/387915092_DESKTOP_-_Landing_Page_-_1_Copy">View Desktop Prototype</a>
+            <a class="focal-std-btn button stacked-btn" target="_blank" href="https://projects.invisionapp.com/share/UBUKOA13V2N#/screens/390636077_MOBILE_-_LANDING_PAGE">View Mobile Prototype</a>
           </div>
         </section>
       </main>
@@ -311,7 +375,7 @@
       <!-- FINAL THOUGHTS -->
       <section class="final-thoughts full-width color-bg">
         <div class="container-small">
-          <h2>Final Thoughts</h2>
+          <h2 class="project-header">Final Thoughts</h2>
           <p class="paragraph-medium">
 People are very familiar with other cloud storage applications, so keeping functionality similar to what users already know reduces confusion (Jakob’s Law). I found this to be true while conducting user testing. Most of the people reviewed the functionality by comparing it to the other cloud storage applications they already used.</p>
           <p class="paragraph-medium">Providing too many options at the same time complicates usability. Simplify the interface as much as possible.</p>
@@ -321,16 +385,16 @@ People are very familiar with other cloud storage applications, so keeping funct
 
 
       <!-- Footer Section -->
-      <footer class="color-bg">
+      <footer>
         <div class="container-full">
           <div class="footer-content">
             <h2>Say hello!</h2>
             <p class="paragraph-large">I love meeting new people.  <br>Feel free to get in touch.</p>
             <div class="contact-icons">
-              <a href="mailto:colvilledesigns@gmail.com?subject=Hello!">
+              <a href="mailto:colvilledesigns@gmail.com?subject=Hello!" target="_blank">
                 <i class="fas fa-envelope fa-2x"></i>
               </a>
-              <a href="http://www.linkedin.com/in/jon-colville">
+              <a href="http://www.linkedin.com/in/jon-colville" target="_blank">
                 <i class="fab fa-linkedin-in fa-2x"></i>
               </a>
             </div>
@@ -342,8 +406,32 @@ People are very familiar with other cloud storage applications, so keeping funct
         </div>
       </footer>
 
+      <!-- back to top button -->
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
       <!-- JAVASCRIPT -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="js/navigation-light.js"></script>
+      <script>
+          //Get the button
+          var mybutton = document.getElementById("topBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
     </body>
   </html>

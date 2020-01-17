@@ -31,26 +31,26 @@
         <nav>
           <ul class="menu">
             <li class="logo"><a href="index.html"><img src="img/logo-main.png" alt="Jon Colville Logo"></a></li>
-            <li class="item"><a href="index.html" class="active">Case Studies</a></li>
+            <li class="item"><a href="index.html" class="active selected">Case Studies</a></li>
             <li class="item"><a href="about.html">About</a></li>
+            <li class="item"><a class="cv" href="cv/jonathan-colville-resume.pdf" target="_blank" download>Download Resum&eacute;</a></li>
             <li class="toggle"><a href="#"><img src="img/mobile-menu.svg" alt="Hamburger menu"></a></li>
           </ul>
         </nav>
         <div class="container-full hero-text">
           <div>
-            <h6 class="intro">Hello, You can call me Jon.</h6>
+            <h1 class="intro">Hello, You can call me Jon.</h1>
             <h1>I am a Twin Cities-based UX/UI Visual Designer with over 13 years of experience in art direction and graphic design.</h1>
             <h1 class="mobile-hidden">I love to learn and am continually looking for ways to improve things, learn more and just do it better.</h1>
-            <div class="contact-icons">
-              <a class="contact-icon" href="mailto:colvilledesigns@gmail.com?subject=Opportunity"><i class="fas fa-envelope fa-2x"></i></a>
-              <a class="contact-icon" href="http://www.linkedin.com/in/jon-colville"><i class="fab fa-linkedin-in fa-2x"></i></a>
-            </div>
           </div>
+        </div>
+        <div class="text-center more-arrow">
+          <a href="#case-study"><i class="fas fa-chevron-down"></i></a>
         </div>
     </header>
 
       <!-- Casestudy Section -->
-      <section class="container-full project">
+      <section id="case-study" class="container-full project">
         <div class="casestudy-text">
           <h6>01</h6>
           <h2>Focal Cloud Storage</h2>
@@ -69,10 +69,10 @@
             <h2>Say hello!</h2>
             <p class="paragraph-large">I love meeting new people.  <br>Feel free to get in touch.</p>
             <div class="contact-icons">
-              <a href="mailto:colvilledesigns@gmail.com?subject=Hello!">
+              <a href="mailto:colvilledesigns@gmail.com?subject=Hello!" target="_blank">
                 <i class="fas fa-envelope fa-2x"></i>
               </a>
-              <a href="http://www.linkedin.com/in/jon-colville">
+              <a href="http://www.linkedin.com/in/jon-colville" target="_blank">
                 <i class="fab fa-linkedin-in fa-2x"></i>
               </a>
             </div>
@@ -84,9 +84,35 @@
         </div>
       </footer>
 
+      <!-- back to top button -->
+        <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-arrow-circle-up"></i></button>
+
+
+
       <!-- JAVASCRIPT -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
       <script src="js/navigation.js"></script>
+      <script>
+          //Get the button
+          var mybutton = document.getElementById("topBtn");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+      </script>
 
     </body>
   </html>

@@ -69,6 +69,10 @@ picture {mix-blend-mode: darken;}
 
 /* --------------------- TYPOGRAPHY --------------------- */
 
+.teal {
+  color:#017F82;
+}
+
 .text-center {
   text-align: center;
 }
